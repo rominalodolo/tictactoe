@@ -1,12 +1,8 @@
-import './App.css';
+import "./App.css";
 
 class Square extends React.Component {
   render() {
-    return (
-      <button className="square">
-        {/* TODO */}
-      </button>
-    );
+    return <button className="square">{/* TODO */}</button>;
   }
 }
 
@@ -16,7 +12,7 @@ class Board extends React.Component {
   }
 
   render() {
-    const status = 'Next player: X';
+    const status = "Next player: X";
 
     return (
       <div>
@@ -59,11 +55,6 @@ class Game extends React.Component {
 
 // ========================================
 
-ReactDOM.render(
-  <Game />,
-  document.getElementById('root')
-);
-
-
+ReactDOM.render(<Game />, document.getElementById("root"));
 
 export default App;
