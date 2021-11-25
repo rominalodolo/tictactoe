@@ -1,18 +1,11 @@
 import React from "react";
 
-export const Square = () => {
+function Square(props) {
   return (
-    <div>
-      <button
-        className="square"
-        onClick={function () {
-          console.log("click");
-        }}
-      >
-        {this.props.value}
-      </button>
-    </div>
+    <button className="square" onClick={props.onClick}>
+      {props.value}
+    </button>
   );
-};
+}
 
 export default Square;
