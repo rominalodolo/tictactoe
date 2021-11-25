@@ -1,10 +1,16 @@
 import React from "react";
 
-
 export const Square = () => {
   return (
     <div>
-      <button className="square">{this.props.value}</button>
+      <button
+        className="square"
+        onClick={function () {
+          console.log("click");
+        }}
+      >
+        {this.props.value}
+      </button>
     </div>
   );
 };
